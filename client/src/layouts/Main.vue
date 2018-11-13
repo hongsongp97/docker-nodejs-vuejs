@@ -7,7 +7,7 @@
 </template>
 
 <script>
-  import HeaderContent from ".//Header.vue";
+  import HeaderContent from "./Header.vue";
   import MainContent from "./Content.vue";
   import FooterContent from "./Footer.vue";
   
