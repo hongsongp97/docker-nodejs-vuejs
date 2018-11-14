@@ -5,14 +5,12 @@ services:
     build: ./server
     volumes:
       - ./server:/usr/src/app/server
-      - ./server/node_modules:/usr/src/app/server/node_modules
     ports:
-      - "8081:8081"
+      - "8081:80"
   client:
     container_name: client
     build: ./client
     volumes:
       - ./client:/usr/src/app/client
-      - ./client/node_modules:/usr/src/app/client/node_modules
     ports:
-      - "8080:8080"
+      - "8080:80"

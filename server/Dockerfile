@@ -17,6 +17,6 @@ RUN npm install nodemon -g
 # Bundle app source
 COPY . .
 
-EXPOSE 8081
+EXPOSE 80
 
 CMD [ "nodemon", "server.js" ]

@@ -15,6 +15,8 @@ RUN npm install
 # Bundle app source
 COPY . .
 
-EXPOSE 8080
+RUN npm install node-sass
+
+EXPOSE 80
 
 CMD [ "npm", "run","serve" ]
